@@ -1,0 +1,124 @@
+h3{
+  font-size: 3vw;
+}
+h4{
+  font-size: 2vw;
+}
+
+.line{
+  width: 100%;
+  height: 0.3vw;
+  text-align: center center;
+  border-bottom: 1px solid rgb(128, 128, 128);
+  margin-bottom: 0.3vw;
+}
+
+/* info nombre */
+.cardsPinfo {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.cardPinfo {
+  display: grid;
+  font-size: 1.5vw;
+}
+
+/* info name photo */
+.photoProfil {
+  border-radius: 100%;
+}
+.cardsPPhoto {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap:1vw;
+  padding: 1vh;
+}
+
+.cardPPhoto {
+  display: grid;
+}
+
+
+/* Gallery */
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:1vw;
+  padding: 1vh;
+}
+
+.card {
+  display: grid;
+}
+
+#profil {
+  Position: absolute;
+  width:80%;
+  left: 10%;
+}
+
+
+
+@media only screen and (max-width: 750px) {
+
+  /* Gallery */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:0.5vw;
+    padding: 0.5vh;
+  }
+  
+  .card {
+    display: grid;
+  }
+
+  #profil {
+    Position: absolute;
+    width:98%;
+    left: 1%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  /* Gallery */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:0vw;
+    padding: 0vh;
+  }
+  
+  .card {
+    display: grid;
+  }
+  
+  #profil {
+    Position: absolute;
+    width:100%;
+    left: 0%;
+  }
+}
+
+
+/* Photo carre */
+.square {
+  position: relative;
+}
+
+.square::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.square img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+

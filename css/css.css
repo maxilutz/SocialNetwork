@@ -1,0 +1,182 @@
+
+/*Polices*/
+@font-face {
+    font-family: 'fortysecondstreethbregular';
+    src: url('polices/fortssh_-webfont.woff2') format('woff2'),
+         url('polices/fortssh_-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Works on Firefox scrollbar */
+* {
+    scrollbar-width: thin;
+    scrollbar-color:  rgb(220, 220, 220) rgb(128, 128, 128);
+}
+
+/* Works on Chrome, Edge, and Safari scrollbar */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgb(128, 128, 128);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(220, 220, 220);
+    border-radius: 20px;
+    border: 3px solid rgb(128, 128, 128);
+}
+  
+
+
+#body{
+    position: absolute;
+    background-color: rgb(200, 200, 200);
+    border:0; 
+    width:100%; 
+    height: 95vh;
+    overflow-y: scroll;
+    overflow-x: none;
+}
+
+
+.exit{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.cardsMenu {
+    display: grid;
+    background-color: rgb(220, 220, 220);
+    grid-template-columns: repeat(4,1fr);
+}
+
+.cardMenu {
+    display: grid;
+}
+
+#menu {
+    height: 5vh;
+    width: 100%;
+}
+
+#menu .select{
+    width: 25vw;
+    height: 100%;
+    color: rgb(0, 0,100);
+    background-color: rgb(200, 200, 200);
+    border-top: 0.3vw solid rgb(128, 128, 128);
+    border-left: 0.3vw solid rgb(128, 128, 128);
+    border-right: 0.3vw solid rgb(128, 128, 128);
+    border-bottom: 0.3vw solid rgb(200, 200, 200);
+}
+
+#menu button{
+    font-size: 1vw;
+    width: 25vw;
+    height: 100%;
+    color: rgb(128, 128, 128);
+    background-color: transparent;
+    border-top: 0.3vw solid transparent;
+    border-left: 0.3vw solid transparent;
+    border-right: 0.3vw solid transparent;
+    border-bottom: 0.3vw solid rgb(128, 128, 128);
+}
+
+#menu button:hover{
+    font-size: 1vw;
+    width: 25vw;
+    height: 100%;
+    color: rgb(0, 0,100);
+    background-color: rgb(200, 200, 200);
+    border-top: 0.3vw solid rgb(128, 128, 128);
+    border-left: 0.3vw solid rgb(128, 128, 128);
+    border-right: 0.3vw solid rgb(128, 128, 128);
+    border-bottom: 0.3vw solid rgb(200, 200, 200);
+}
+.footer {
+    background: #ebebea;
+    padding-top: 90px
+}
+
+.logo_footer {
+    padding-top: 20px;
+    text-align: center;
+    display: block;
+}
+
+.border-top1 {
+    border-top: #0d90ed solid 1px;
+}
+
+.reader h3 {
+    color: #02111c;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35px;
+    margin-bottom: 15px;
+    margin-top: 26px;
+}
+
+.reader li {
+    font-size: 17px;
+    line-height: 26px;
+    color: #02111c;
+}
+
+.reader li a:hover {
+    color: #0d90ed;
+}
+
+ul.social_icon {
+    padding-top: 30px;
+}
+
+ul.social_icon li {
+    display: inline-block;
+    padding-right: 18px;
+}
+
+ul.social_icon li:last-child {
+    padding-right: 0;
+}
+
+ul.social_icon li a {
+    background: transparent;
+    color: #00aeef;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    border: #00aeef solid 1px;
+}
+
+ul.social_icon li a:hover {
+    background: #00aeef;
+    color: #fff;
+    transform: rotate(360deg);
+    transition: ease-in all 0.7s;
+}
+
+.copyright p {
+    margin-top: 54px;
+    color: #050404;
+    padding: 20px 0px;
+    border-top: dashed #818181 2px;
+}
+
+.copyright a {
+    color: #050404;
+}
+
+.copyright a:hover {
+    color: #00aeef;
+}
